@@ -1,0 +1,50 @@
+.menu {
+    position: absolute;
+    width: 80%;
+    background-color: var(--Bprimary-color);
+    /* open position */
+    transform: translate(-32px, -45px);
+    opacity: 1;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.xbtn {
+    position: absolute;
+    top: 7%;
+    left: 95%;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.xbtn:hover {
+    font-size: large;
+}
+
+.menu li {
+    height: 30px;
+    margin: 10px;
+    transition: .15s;
+    border-bottom: .1px solid var(--border-color);
+}
+
+.menu li:hover {
+    font-size: large;
+}
+
+@media (min-width: 700px) {
+    .menu {
+        display: none;
+    }
+}
+
+/* closed state: move slightly up and fade out, disable pointer events */
+.menu.dnune {
+    transform: translate(-32px, -65px);
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* When visible make sure pointer events are enabled */
+.menu:not(.dnune) {
+    pointer-events: auto;
+}
