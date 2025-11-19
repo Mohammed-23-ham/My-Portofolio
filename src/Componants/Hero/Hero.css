@@ -1,0 +1,75 @@
+.hero {
+    margin-top: 60px;
+}
+
+.hero .lsection {
+    flex-grow: 1;
+    
+}
+
+.hero .parent-avatar {
+    align-items: end;
+}
+
+.hero .parent-avatar img {
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+    box-shadow: 150px 0 0 var(--Bprimary-color) inset;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.hero .parent-avatar span {
+    color: rgb(83, 188, 252);
+}
+
+.hero h1 {
+    font-size: 40px;
+    line-height: 50px;
+    color: var(--text-primary);
+    margin: 24px 0;
+}
+
+.hero p {
+    color: var(--text-secondary);
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.hero .icons {
+    gap: 10px;
+}
+
+.hero .icons .icon {
+    font-size: 25px;
+    color: var(--text-secondary);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.hero .icons .icon:hover {
+    color: var(--text-primary);
+    transform: translateX(3px) scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero .lsection {
+        padding: 15px;
+    }
+
+    .hero .rsection.animation {
+        display: none;
+    }
+    
+    .hero .parent-avatar img {
+        width: 100px;
+        height: 100px;
+    }
+}

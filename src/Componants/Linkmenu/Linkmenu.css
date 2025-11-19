@@ -1,11 +1,22 @@
 .menu {
     position: absolute;
-    width: 80%;
+    width: 100%;
     background-color: var(--Bprimary-color);
-    /* open position */
-    transform: translate(-32px, -45px);
-    opacity: 1;
     transition: transform 0.3s ease, opacity 0.3s ease;
+
+}
+
+.menu:not(.dnune) {
+    transform: translate(-40px, -40px);
+    opacity: 1;
+    display: block;
+}
+
+.dnune {
+    transform: translate(-32px, -255px);
+    display: block;
+    opacity: 0;
+    
 }
 
 .xbtn {
@@ -13,17 +24,17 @@
     top: 7%;
     left: 95%;
     cursor: pointer;
-    transition: .3s;
+    transition: .7s ease-in-out;
 }
 
 .xbtn:hover {
-    font-size: large;
+    rotate: 180deg;
 }
 
 .menu li {
     height: 30px;
     margin: 10px;
-    transition: .15s;
+    transition: .3s;
     border-bottom: .1px solid var(--border-color);
 }
 
@@ -35,16 +46,4 @@
     .menu {
         display: none;
     }
-}
-
-/* closed state: move slightly up and fade out, disable pointer events */
-.menu.dnune {
-    transform: translate(-32px, -65px);
-    opacity: 0;
-    pointer-events: none;
-}
-
-/* When visible make sure pointer events are enabled */
-.menu:not(.dnune) {
-    pointer-events: auto;
 }

@@ -1,7 +1,6 @@
+import { useState } from 'react'
 import { Linkmenu } from '../index'
 import './Header.css'
-import { useState } from 'react'
-import { FaMoon, FaSun, FaList } from "react-icons/fa";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -13,8 +12,7 @@ export default function Header() {
   return (
     <header className='flex'>
       <div className="button">
-        <button className="menubtn" onClick={() => setMenuOpen(prev => !prev)}>
-          <FaList />
+        <button className="menubtn icon-menu" onClick={() => setMenuOpen(prev => !prev)}>
         </button>
         <Linkmenu open={menuOpen} onLinkClick={closeMenu} />
       </div>
@@ -27,8 +25,7 @@ export default function Header() {
           <li><a href="">Contact</a></li>
         </ul>
       </nav>
-      <button>
-        <FaSun />
+      <button className='icon-sun-stroke'>
       </button>
     </header>
   )

@@ -1,15 +1,13 @@
 import './Linkmenu.css'
-import { FaX } from 'react-icons/fa';
 
 export default function Linkmenu({ open = false, onLinkClick }) {
+    // If `open` is true we remove the 'dnune' class; otherwise keep it
     const classes = `menu ${open ? '' : 'dnune'}`.trim()
 
     return (
         <>    
             <div className={classes}>
-                <span className='xbtn' onClick={onLinkClick}>
-                    <FaX />
-                    </span>
+                <span className='xbtn icon-remove' onClick={onLinkClick}></span>
                 <ul>
                     <li className='link'><a href="#" onClick={onLinkClick}>About</a></li>
                     <span className="downline"></span>

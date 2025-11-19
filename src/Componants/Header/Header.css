@@ -1,6 +1,11 @@
 header.flex {
     justify-content: space-between;
     padding: 4px 32px;
+    background-color: var(--primary-color);
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    z-index: 1000;
 }
 
 header.flex nav {
@@ -37,14 +42,14 @@ header button {
     color: var(--secondary-color);
     font-size: large;
     outline: none;
-    transition: .3s;
+    transition: .7s ease-in-out;
 }
 
 header .button button {
     display: none;
 }
 header button:hover {
-    rotate: 70deg;
+    rotate: 360deg;
 }
 
 @media (max-width: 700px) {

@@ -3,6 +3,12 @@
 html {
   font-family: "Roboto", sans-serif;
   letter-spacing: .7px;
+  height: 100%;
+}
+
+/* ensure app root fills viewport so percentage heights work */
+body, #root {
+  height: 100%;
 }
 
 
@@ -22,13 +28,16 @@ a {
     transition: .3s;
 }
 
+button {
+  all: unset;
+}
+
 .flex {
   display: flex;
   align-items: center;
 }
 .dnune {
-  /* keep layout — actual hide/show is handled via opacity/transform in component CSS */
-  display: block;
+  display: none;
 }
 
 .border {
@@ -36,39 +45,61 @@ a {
 }
 
 .dm {
-  --primary-color: rgb(9 20 64);
-  --Bprimary-color: rgb(0, 9, 53);
-  --secondary-color: #ffffff;
-  --Wsecondary-color: rgb(230, 230, 230);
-  --border-color: rgba(230, 230, 230, 0.5);
+  /* Dark theme — deep blue background with cool light text */
+  --primary-color: #071233;
+  --Bprimary-color: #03102a;           /* darker shadow color */
+  --hover-color: #0b2a66;              /* slightly brighter accent */
+  --secondary-color: #E6EEF9;          /* used for subtle UI elements */
+  --Wsecondary-color: rgba(230,238,249,0.9);
+  --border-color: rgba(230,238,249,0.12);
+  --text-primary: #E9F0FA;            /* main readable text on dark bg */
+  --text-secondary: rgba(233,240,250,0.72); /* muted text */
 }
 
 .lm {
-  --primary-color: #ffffff !important;
-  --Bprimary-color: rgb(230, 230, 230) !important;
-  --secondary-color: rgb(9 20 64) !important;
-  --Wsecondary-color: rgb(0 9 53 / 0.5) !important;
-  --border-color: rgba(0, 9, 53,  0.395) !important;
+  /* Light theme — pale blue/gray background with navy text */
+  --primary-color: #F5F8FF !important; /* very light blue */ 
+  --Bprimary-color: #E6EEF9 !important; /* subtle card background */
+  --hover-color: #E0E7FF !important;    /* light hover */
+  --secondary-color: #071233 !important; /* navy used as primary content color */
+  --Wsecondary-color: rgba(7,18,51,0.08) !important;
+  --border-color: rgba(7,18,51,0.08) !important;
+  --text-primary: #071233;              /* main text on light bg */
+  --text-secondary: rgba(7,18,51,0.66); /* muted text */
 }
 
 
 .body {
+  /* kept as helper class if you prefer adding a class to body, but also
+     make the real body element fill the viewport below */
   background-color: var(--primary-color);
-  color: var(--secondary-color);
-  transition: background-color 0.3s ease;
-  height: 99.9vh;
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.25s ease;
+}
+
+/* apply to real <body> too so you don't need to add .body class in HTML */
+body {
+  margin: 0;
+  background-color: var(--primary-color);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.25s ease;
+  min-height: 100vh;
 }
 
 .container {
   box-shadow: 1px 1px 50px 15px var(--Bprimary-color);
-  width: 80%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--primary-color);
-  height: 100%;
+  /* use min-height so container can grow if content is taller than viewport */
+  min-height: 100%;
+  padding: 0 10px;
 }
 
 .downline {
-  padding-top: 1px;
+  padding-top: 8px;
   border-bottom: .1px solid var(--border-color);
+  margin-bottom: 16px;
 }
+
