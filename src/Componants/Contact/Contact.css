@@ -1,125 +1,132 @@
+.contact h1 span {
+  width: 10px !important;
+}
+
 .contact .title span {
-    color: var(--text-secondary);
-    margin: 0 10px;
-    font-size: 35px;
+  color: var(--text-secondary);
+  margin: 0 10px;
+  font-size: 35px;
 }
 
 .contact .title {
-    font-size: 35px;
-    color: var(--text-primary);
-    margin-bottom: 10px;
+  font-size: 35px;
+  color: var(--text-primary);
+  margin-bottom: 10px;
 }
 
 .contact .subtitle {
-    color: var(--text-secondary);
-    margin-bottom: 16px;
-    line-height: 12px;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+  line-height: 12px;
 }
 
 .contact .container {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 .contact .container form {
-    gap: 10px;
-    flex-direction: column;
-    position: relative;
+  gap: 10px;
+  flex-direction: column;
+  position: relative;
 }
 
 .contact .container form div {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    margin-top: 10px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 10px;
 }
 
 .contact .container label {
-    color: var(--text-primary);
-    width: auto;
-    min-width: 120px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  color: var(--text-primary);
+  width: auto;
+  min-width: 120px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .contact .container #email,
 .contact .container #message {
-    all: unset;
-    background-color: var(--Bprimary-color);
-    border: 1px solid var(--border-color);
-    width: 250px;
-    padding: 8px 16px;
-    border-radius: 5px;
-    transition: .3s;
+  all: unset;
+  background-color: var(--Bprimary-color);
+  border: 1px solid var(--border-color);
+  width: 250px;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: 0.3s;
 }
 
 .contact .container #message {
-    min-height: 100px;
-    resize: none;
+  min-height: 100px;
+  resize: none;
 }
 
 .contact .container .submit {
-     background-color: var(--Bprimary-color);
-    height: 30px;
-    padding: 5px 8px;
-    text-align: center;
-    font-size: 17px;
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
-    color: var(--text-primary);
-    transition: .3s;
-    position: relative;
-    left: 41%;
+  background-color: var(--Bprimary-color);
+  height: 30px;
+  padding: 5px 8px;
+  text-align: center;
+  font-size: 17px;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  color: var(--text-primary);
+  transition: 0.3s;
+  position: relative;
+  left: 41%;
 }
 
 .contact .container .submit:hover {
-    scale: 1.02;
+  scale: 1.02;
 }
 
 .contact .container #email:focus,
 .contact .container #message:focus {
-    border: 1px solid var(--Wsecondary-color);
+  border: 1px solid var(--Wsecondary-color);
 }
 
 .contact .container #email:hover,
 .contact .container #message:hover {
-    border: 1px solid var(--secondary-color);
-    scale: 1.02;
+  border: 1px solid var(--secondary-color);
+  scale: 1.02;
 }
 
+.contact .container .animation {
+    width: 400px;
+}
 
 @media (max-width: 768px) {
-    .contact .container form {
-        margin: auto;
-        right: 10px;
-    }
+  .contact .container form {
+    margin: auto;
+    right: 10px;
+  }
 
-    .contact .container form div {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 8px;
-    }
+  .contact .container form div {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
 
-    .contact .container label {
-        min-width: auto;
-        white-space: normal;
-    }
+  .contact .container label {
+    min-width: auto;
+    white-space: normal;
+  }
 
-    .contact .container #email,
-    .contact .container #message {
-        width: 100%;
-    }
-    
-    .contact .container .submit {
-        transform: translate(-150%, -10%);
-    }
+  .contact .container #email,
+  .contact .container #message {
+    width: 100%;
+  }
 
-    .contact .container .submit{
-        left: 61.5%;
-    }
+  .contact .container .submit {
+    transform: translate(-150%, -10%);
+  }
 
-    .contact .container .animation {
-        display: none;
-    }
+  .contact .container .submit {
+    left: 61.5%;
+  }
+
+  .contact .container .animation {
+    display: none;
+  }
 }
 @media (max-width: 512px) {
 }

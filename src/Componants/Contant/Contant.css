@@ -5,6 +5,12 @@
     align-items: center;
 }
 
+.contant h1 {
+    font-size: 35px;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+}
+
 .left-sec {
     display: flex;
     /* flex-direction: column; */

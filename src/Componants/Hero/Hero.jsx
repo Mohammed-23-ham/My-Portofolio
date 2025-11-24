@@ -1,4 +1,6 @@
 import './Hero.css'
+import Lottie from 'lottie-react';
+import aniLap from '../../../public/animation/lap.json'
 
 export default function Hero() {
   return (
@@ -18,7 +20,7 @@ export default function Hero() {
           <div className="icon icon-linkedin-square"></div>
         </div>
       </div>
-      <div className="rsection animation">rsection</div>
+      <div className="rsection animation"><Lottie animationData={aniLap} /></div>
     </div>
   )
 }

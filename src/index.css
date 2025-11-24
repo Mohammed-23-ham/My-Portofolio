@@ -57,15 +57,15 @@ button {
 }
 
 .lm {
-  /* Light theme — pale blue/gray background with navy text */
-  --primary-color: #F5F8FF !important; /* very light blue */ 
-  --Bprimary-color: #E6EEF9 !important; /* subtle card background */
-  --hover-color: #E0E7FF !important;    /* light hover */
-  --secondary-color: #071233 !important; /* navy used as primary content color */
-  --Wsecondary-color: rgba(7,18,51,0.08) !important;
-  --border-color: rgba(7,18,51,0.08) !important;
-  --text-primary: #071233;              /* main text on light bg */
-  --text-secondary: rgba(7,18,51,0.66); /* muted text */
+  /* Light theme — shifted toward neutral gray (darker, less bright) */
+  --primary-color: #c5c6ca !important; /* neutral light gray background */
+  --Bprimary-color: #D2D4D8 !important; /* card background: slightly darker gray */
+  --hover-color: #C9CCD1 !important;    /* hover: subtle darker gray */
+  --secondary-color: #1B2229 !important; /* primary content color: dark gray */
+  --Wsecondary-color: rgba(27,34,41,0.12) !important; /* subtle overlays/shadows */
+  --border-color: rgba(27,34,41,0.14) !important; /* stronger border contrast */
+  --text-primary: #131722;              /* main text: dark gray (softer than pure black) */
+  --text-secondary: rgba(19,23,34,0.72); /* muted text: slightly darker muted gray */
 }
 
 

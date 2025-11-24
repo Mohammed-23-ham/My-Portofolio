@@ -1,6 +1,14 @@
 import './Contact.css'
+import { useForm, ValidationError } from '@formspree/react';
+import Lottie from 'lottie-react';
+import aniMassage from '../../../public/animation/mas.json'
+import donMassage from '../../../public/animation/done.json'
 
 export default function Contact() {
+  const [state, handleSubmit] = useForm("mjkzjzan");
+  if (state.succeeded) {
+    return <h1><span><Lottie animationData={donMassage} style={{width: "45px"}} /></span> Thanks for joining!</h1>;
+  }
   return (
     <div className='contact'>
       <h1 className='title'>
@@ -8,18 +16,28 @@ export default function Contact() {
       </h1>
       <p className='subtitle'>Contact Me For More Information Or Help.</p>
       <div className="container flex">
-        <form action="" className='flex'>
+        <form onSubmit={handleSubmit} action="" className='flex'>
           <div>
             <label htmlFor="email">Email Address:</label>
-            <input type="email" name="" id="email" />
+            <input type="email" name="email" id="email" required />
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
+            />
           </div>
           <div>
             <label htmlFor="message">Your Message:</label>
-            <textarea name="" id="message"></textarea>
+            <textarea name="message" id="message" required></textarea>
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
           </div>
-          <button className='submit'>Submit</button>
+          <button type="submit" disabled={state.submitting} className='submit'>send</button>
         </form>
-        <div className="animation">ANIMATION</div>
+        <div className="animation"><Lottie animationData={aniMassage} /></div>
       </div>
     </div>
   )

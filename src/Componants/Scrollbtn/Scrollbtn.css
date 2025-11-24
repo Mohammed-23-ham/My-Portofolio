@@ -1,0 +1,60 @@
+.Scrollbtn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  top: 92%;
+  left: 95%;
+  box-shadow: 0px 0px 40px black;
+}
+
+.Scrollbtn span {
+  font-size: 50px;
+}
+
+.Scrollbtn:hover span {
+  animation: up2 2s ease-out;
+}
+
+
+@keyframes up2 {
+  0% {
+    height: 50px;
+  }
+  20% {
+    height: 90px;
+  }
+  30% {
+    height: 80px;
+  }
+  50% {
+    height: 90px;
+  }
+  100% {
+    height: 50px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .Scrollbtn {
+    left: 92%;
+  }
+}
+
+@media (max-width: 700px) {
+  .Scrollbtn {
+    left: 90%;
+  }
+}
+
+@media (max-width: 550px) {
+  .Scrollbtn {
+    display: none;
+  }
+}
