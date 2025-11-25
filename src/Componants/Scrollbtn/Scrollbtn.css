@@ -19,7 +19,7 @@
 }
 
 .Scrollbtn:hover span {
-  animation: up2 2s ease-out;
+  animation: up2 2s infinite;
 }
 
 
