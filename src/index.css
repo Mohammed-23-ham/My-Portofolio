@@ -4,6 +4,7 @@ html {
   font-family: "Roboto", sans-serif;
   letter-spacing: .7px;
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 /* ensure app root fills viewport so percentage heights work */

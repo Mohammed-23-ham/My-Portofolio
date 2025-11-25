@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <div className="body dm">
-        <div className='container dm'>
+        <div className='container dm' id="up">
           <Header />
           <div className="downline"></div>
           <Hero />
@@ -19,7 +19,9 @@ function App() {
           <Footer />
           <div className="downline"></div>
         </div>
-        <Scrollbtn />
+        <a href="#up" id="">
+          <Scrollbtn />
+        </a>
       </div>
     </>
   )
