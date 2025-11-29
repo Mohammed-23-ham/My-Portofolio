@@ -62,9 +62,14 @@
 
 .right-sec .card:hover {
     box-shadow: 0px 0px 15px .5px var(--Wsecondary-color);
-    transform: translateY(-5px) rotate(3deg);
+    transform: translateY(-5px) ;
     scale: 1.01;
     cursor: pointer;
+}
+.right-sec .card:hover img {
+    height: 150px;
+    width: 250px;
+    transition: .3s;
 }
 
 .right-sec .card img {
@@ -96,18 +101,18 @@
     height: 30px;
 }
 
-.card .box .last .icons div {
+.card .box .last .icons a.firest {
     transition: .3s;
     font-size: 20px;
     cursor: pointer;
+    color: var(--text-primary);
 }
 
-.card .box .last .icons div:hover {
-    color: var(--text-primary);
+.card .box .last .icons a.firest:hover {
     transform: translateX(3px) scale(1.2);
 }
 
-.card .box .last a {
+.card .box .last a.more {
     font-size: 15px;
     color: rgb(59, 140, 191);
     gap: 5px;

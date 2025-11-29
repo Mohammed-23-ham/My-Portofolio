@@ -1,13 +1,12 @@
 import './Footer.css'
 
-export default function Footer() {
+export default function Footer({ id }) {
   return (
-    <div className='footer flex'>
+    <div id={id} className='footer flex'>
       <ul className='flex'>
-        <li><a href="">About</a></li>
-        <li><a href="">Project</a></li>
-        <li><a href="">Speaking</a></li>
-        <li><a href="">User</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contant">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
       <p>2025 © Devilopd By Mohammed Al_Hamawy. All Right Reserved.</p>
     </div>

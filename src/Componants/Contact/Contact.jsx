@@ -4,13 +4,13 @@ import Lottie from 'lottie-react';
 import aniMassage from '../../../public/animation/mas.json'
 import donMassage from '../../../public/animation/done.json'
 
-export default function Contact() {
+export default function Contact({ id }) {
   const [state, handleSubmit] = useForm("mjkzjzan");
   if (state.succeeded) {
     return <h1><span><Lottie animationData={donMassage} style={{width: "45px"}} /></span> Thanks for joining!</h1>;
   }
   return (
-    <div className='contact'>
+    <div id={id} className='contact'>
       <h1 className='title'>
         <span className='icon-envelope-open'></span> Contact Me
       </h1>

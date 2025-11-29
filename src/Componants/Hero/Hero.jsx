@@ -2,9 +2,9 @@ import './Hero.css'
 import Lottie from 'lottie-react';
 import aniLap from '../../../public/animation/lap.json'
 
-export default function Hero() {
+export default function Hero({ id }) {
   return (
-    <div className='hero flex'>
+    <div id={id} className='hero flex'>
       <div className="lsection">
         <div className="parent-avatar flex">
           <img src="/public/imgs/me.png" alt="" />
