@@ -4,7 +4,7 @@ export const allProjects = [
     category: "htss",
     image: "/public/imgs/c1.jpg",
     mText: "This Page Includes All MY Social Media Accounts.",
-    mLink: "",
+    mLink: "https://mohammed-23-ham.github.io/My-Accounts/",
     // guessed repo url — update if your repo name differs
     gitLink: "https://github.com/Mohammed-23-ham/my-accounts",
   },
@@ -13,7 +13,7 @@ export const allProjects = [
     category: "react",
     image: "/public/imgs/c2.jpg",
     mText: "This Is A React Project To Organize Your To-Do-List.",
-    mLink: "",
+    mLink: "https://2o-dolist.netlify.app/",
     gitLink: "https://github.com/Mohammed-23-ham/to-do-list",
   },
   {
@@ -21,7 +21,7 @@ export const allProjects = [
     category: "js",
     image: "/public/imgs/calculator.jpg",
     mText: "This Is A Calculator Built With HTML + CSS + JS.",
-    mLink: "",
+    mLink: "https://mohammed-23-ham.github.io/calculator/",
     gitLink: "https://github.com/Mohammed-23-ham/calculator",
   },
   {
@@ -29,7 +29,7 @@ export const allProjects = [
     category: "react",
     image: "/public/imgs/c3.jpg",
     mText: "A Fun XO-Game Built with React.",
-    mLink: "",
+    mLink: "https://luxury-mochi-31dc95.netlify.app/",
     gitLink: "https://github.com/Mohammed-23-ham/xo-game",
   },
   {
@@ -37,7 +37,7 @@ export const allProjects = [
     category: "htss",
     image: "/public/imgs/c4.jpg",
     mText: "Single-Page Design Built with HTML + CSS.",
-    mLink: "",
+    mLink: "https://mohammed-23-ham.github.io/template_one/",
     gitLink: "https://github.com/Mohammed-23-ham/template-1",
   },
   {
@@ -45,7 +45,7 @@ export const allProjects = [
     category: "htss",
     image: "/public/imgs/c5.jpg",
     mText: "Single-Page Design Built with HTML + CSS.",
-    mLink: "",
+    mLink: "https://mohammed-23-ham.github.io/HTML-CSS-Template2/",
     gitLink: "https://github.com/Mohammed-23-ham/template-2",
   },
   {
@@ -53,7 +53,7 @@ export const allProjects = [
     category: "htss",
     image: "/public/imgs/c6.jpg",
     mText: "Single-Page Design Built with HTML + CSS.",
-    mLink: "",
+    mLink: "https://mohammed-23-ham.github.io/HTML-CSS-Template3/",
     gitLink: "https://github.com/Mohammed-23-ham/template-3",
   },
   {
@@ -61,7 +61,7 @@ export const allProjects = [
     category: "htss",
     image: "/public/imgs/c7.jpg",
     mText: "Multi-Page Design Built with HTML + CSS.",
-    mLink: "",
+    mLink: "https://mohammed-23-ham.github.io/template-four/",
     gitLink: "https://github.com/Mohammed-23-ham/template-4",
   },
   {
@@ -69,7 +69,7 @@ export const allProjects = [
     category: "js",
     image: "/public/imgs/c8.jpg",
     mText: "Single-Page Design Built with HTML + CSS + JS.",
-    mLink: "",
+    mLink: "https://mohammed-23-ham.github.io/Template-five/",
     gitLink: "https://github.com/Mohammed-23-ham/template-5",
   },
   {
@@ -77,7 +77,7 @@ export const allProjects = [
     category: "js",
     image: "/public/imgs/c9.jpg",
     mText: "Single-Page Design Built with HTML + CSS + JS.",
-    mLink: "",
+    mLink: "https://mohammed-23-ham.github.io/Template-6/",
     gitLink: "https://github.com/Mohammed-23-ham/template-6",
   },
 ];

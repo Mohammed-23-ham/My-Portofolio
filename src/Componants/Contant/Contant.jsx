@@ -5,6 +5,16 @@ import { allProjects } from './projects';
 export default function Contant({ id }) {
   const [curActive, setcurActive] = useState("all");
   const [arr, setArr] = useState(allProjects);
+  const [copiedLink, setCopiedLink] = useState(null);
+  const handleCopy = async (link) => {
+    try {
+      await navigator.clipboard.writeText(link);
+      setCopiedLink(link);
+      setTimeout(() => setCopiedLink(null), 1500);
+    } catch (error) {
+      console.error("Failed to copy link:", error);
+    }
+  };
   const filterBtn = (btnCategory) => {
     setcurActive(btnCategory);
     const newArr = allProjects.filter((item) => {
@@ -37,10 +47,11 @@ export default function Contant({ id }) {
               <p>{item.mText}</p>
               <div className="last flex">
                 <div className="icons flex">
-                  <a className="firest icon-link"></a>
+                  <a onClick={() => handleCopy(item.mLink)}
+                    aria-label="Copy live link" className="firest icon-link"></a>
                   <a className="firest icon-github" target='_blank' href={item.gitLink}></a>
                 </div>
-                <a href="" className='more flex'>Visit
+                <a target='_blanck' href={item.mLink} className='more flex'>Visit
                   <span className='icon-arrow-right'></span>
                 </a>
               </div>

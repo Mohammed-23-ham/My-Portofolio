@@ -33,6 +33,11 @@ button {
   all: unset;
 }
 
+button:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
 .flex {
   display: flex;
   align-items: center;

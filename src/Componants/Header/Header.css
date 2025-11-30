@@ -1,62 +1,63 @@
 header.flex {
-    justify-content: space-between;
-    padding: 4px 32px;
-    background-color: var(--primary-color);
-    position: fixed;
-    align-items: center;
-    width: 100%;
-    z-index: 1000;
+  left: 0;
+  justify-content: space-between;
+  padding: 4px 32px;
+  background-color: var(--primary-color);
+  position: fixed;
+  align-items: center;
+  width: 100%;
+  z-index: 1000;
 }
 
 header.flex nav {
-    background-color: var(--Bprimary-color);
-    padding: 16px 32px;
-    border-radius: 50px;
-    box-shadow: 0px 1px 1px var(--Wsecondary-color);
+  background-color: var(--Bprimary-color);
+  padding: 16px 32px;
+  border-radius: 50px;
+  box-shadow: 0px 1px 1px var(--Wsecondary-color);
 }
 
 header ul.flex {
-    gap: 16px;
+  gap: 16px;
 }
 
 header li a {
-    color: var(--secondary-color);
-    font-weight: bold;
+  color: var(--secondary-color);
+  font-weight: bold;
 }
 
 header li a:hover {
-    color: var(--Wsecondary-color);
-    font-weight: bold;
+  color: var(--Wsecondary-color);
+  font-weight: bold;
 }
 
 header button {
-    border: 1px solid var(--secondary-color);
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    margin: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    color: var(--secondary-color);
-    font-size: large;
-    outline: none;
-    transition: .7s ease-in-out;
+  border: 1px solid var(--secondary-color);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  margin: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: var(--secondary-color);
+  font-size: large;
+  outline: none;
+  transition: 0.7s ease-in-out;
 }
 
 header .button button {
-    display: none;
+  display: none;
 }
 header button:hover {
-    rotate: 360deg;
+  rotate: 360deg;
 }
 
 @media (max-width: 700px) {
-    header.flex nav {
-        display: none;
-    }
-    header .button button {
-        display: flex;
-    }
+  header.flex nav {
+    display: none;
+  }
+  header .button button {
+    display: flex;
+  }
 }

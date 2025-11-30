@@ -6,9 +6,7 @@ import donMassage from '../../../public/animation/done.json'
 
 export default function Contact({ id }) {
   const [state, handleSubmit] = useForm("mjkzjzan");
-  if (state.succeeded) {
-    return <h1><span><Lottie animationData={donMassage} style={{width: "45px"}} /></span> Thanks for joining!</h1>;
-  }
+
   return (
     <div id={id} className='contact'>
       <h1 className='title'>
@@ -35,7 +33,8 @@ export default function Contact({ id }) {
               errors={state.errors}
             />
           </div>
-          <button type="submit" disabled={state.submitting} className='submit'>send</button>
+          <button type="submit" disabled={state.submitting} className='submit'>{state.submitting ? "Wait..." : "Submit"}</button>
+          <div>{state.succeeded && ( <h1><span><Lottie animationData={donMassage} style={{ width: "45px" }} /></span> Thanks for Massage!</h1>) }</div>
         </form>
         <div className="animation"><Lottie animationData={aniMassage} /></div>
       </div>
