@@ -1,7 +1,6 @@
 import './Linkmenu.css'
 
 export default function Linkmenu({ open = false, onLinkClick }) {
-    // If `open` is true we remove the 'dnune' class; otherwise keep it
     const classes = `menu ${open ? '' : 'dnune'}`.trim()
 
     return (

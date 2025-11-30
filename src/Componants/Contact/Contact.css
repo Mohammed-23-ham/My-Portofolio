@@ -123,9 +123,7 @@
     width: 100%;
   }
 
-  /* Center the submit button for small screens */
   .contact .container .submit {
-    /* remove manual offsets and use flex alignment */
     transform: none;
     left: auto;
     align-self: center;
@@ -140,7 +138,6 @@
   
 }
 @media (max-width: 550px) {
-  /* Ensure the submit and the heading under it are centered */
   .contact .container .submit {
     left: auto;
     transform: none;

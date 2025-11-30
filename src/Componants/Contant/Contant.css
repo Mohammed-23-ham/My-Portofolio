@@ -1,6 +1,6 @@
 .contant {
     gap: 18px;
-    /* align-items: start; */
+    
     flex-direction: column;
     align-items: center;
 }
@@ -13,7 +13,7 @@
 
 .left-sec {
     display: flex;
-    /* flex-direction: column; */
+    
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -46,7 +46,7 @@
 }
 
 .right-sec {
-    /* flex-grow: 1; */
+    
     background-color: var(--Bprimary-color);
     flex-wrap: wrap;
     gap: 18px;

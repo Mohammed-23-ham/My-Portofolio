@@ -7,7 +7,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* ensure app root fills viewport so percentage heights work */
 body, #root {
   height: 100%;
 }
@@ -51,39 +50,34 @@ button:disabled {
 }
 
 .dm {
-  /* Dark theme — deep blue background with cool light text */
   --primary-color: #071233;
-  --Bprimary-color: #03102a;           /* darker shadow color */
-  --hover-color: #0b2a66;              /* slightly brighter accent */
-  --secondary-color: #E6EEF9;          /* used for subtle UI elements */
+  --Bprimary-color: #03102a;
+  --hover-color: #0b2a66;
+  --secondary-color: #E6EEF9;
   --Wsecondary-color: rgba(230,238,249,0.9);
   --border-color: rgba(230,238,249,0.12);
-  --text-primary: #E9F0FA;            /* main readable text on dark bg */
-  --text-secondary: rgba(233,240,250,0.72); /* muted text */
+  --text-primary: #E9F0FA;
+  --text-secondary: rgba(233,240,250,0.72);
 }
 
 .lm {
-  /* Light theme — shifted toward neutral gray (darker, less bright) */
-  --primary-color: #c5c6ca !important; /* neutral light gray background */
-  --Bprimary-color: #D2D4D8 !important; /* card background: slightly darker gray */
-  --hover-color: #C9CCD1 !important;    /* hover: subtle darker gray */
-  --secondary-color: #1B2229 !important; /* primary content color: dark gray */
-  --Wsecondary-color: rgba(27,34,41,0.12) !important; /* subtle overlays/shadows */
-  --border-color: rgba(27,34,41,0.14) !important; /* stronger border contrast */
-  --text-primary: #131722;              /* main text: dark gray (softer than pure black) */
-  --text-secondary: rgba(19,23,34,0.72); /* muted text: slightly darker muted gray */
+  --primary-color: #c5c6ca !important;
+  --Bprimary-color: #D2D4D8 !important;
+  --hover-color: #C9CCD1 !important;
+  --secondary-color: #1B2229 !important;
+  --Wsecondary-color: rgba(27,34,41,0.12) !important;
+  --border-color: rgba(27,34,41,0.14) !important;
+  --text-primary: #131722;
+  --text-secondary: rgba(19,23,34,0.72);
 }
 
 
 .body {
-  /* kept as helper class if you prefer adding a class to body, but also
-     make the real body element fill the viewport below */
   background-color: var(--primary-color);
   color: var(--text-primary);
   transition: background-color 0.3s ease, color 0.25s ease;
 }
 
-/* apply to real <body> too so you don't need to add .body class in HTML */
 body {
   margin: 0;
   background-color: var(--primary-color);
@@ -98,7 +92,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--primary-color);
-  /* use min-height so container can grow if content is taller than viewport */
   min-height: 100%;
   padding: 0 10px;
 }
