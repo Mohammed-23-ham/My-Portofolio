@@ -1,11 +1,24 @@
 import './Contact.css'
 import { useForm, ValidationError } from '@formspree/react';
 import Lottie from 'lottie-react';
-import aniMassage from '../../../public/animation/mas.json'
-import donMassage from '../../../public/animation/done.json'
+import { useEffect, useState } from 'react'
 
 export default function Contact({ id }) {
   const [state, handleSubmit] = useForm("mjkzjzan");
+  const [aniMassage, setAniMassage] = useState(null)
+  const [donMassage, setDonMassage] = useState(null)
+
+  useEffect(() => {
+    fetch('/animation/mas.json')
+      .then(r => r.json())
+      .then(json => setAniMassage(json))
+      .catch(() => setAniMassage(null))
+
+    fetch('/animation/done.json')
+      .then(r => r.json())
+      .then(json => setDonMassage(json))
+      .catch(() => setDonMassage(null))
+  }, [])
 
   return (
     <div id={id} className='contact'>
@@ -34,9 +47,9 @@ export default function Contact({ id }) {
             />
           </div>
           <button type="submit" disabled={state.submitting} className='submit'>{state.submitting ? "Wait..." : "Submit"}</button>
-          <div>{state.succeeded && ( <h1><span><Lottie animationData={donMassage} style={{ width: "45px" }} /></span> Thanks for Massage!</h1>) }</div>
+          <div>{state.succeeded && ( <h1>{donMassage ? <span><Lottie animationData={donMassage} style={{ width: "45px" }} /></span> : null} Thanks for Massage!</h1>) }</div>
         </form>
-        <div className="animation"><Lottie animationData={aniMassage} /></div>
+        <div className="animation">{aniMassage ? <Lottie animationData={aniMassage} /> : null}</div>
       </div>
     </div>
   )

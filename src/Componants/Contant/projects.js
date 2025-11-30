@@ -2,7 +2,7 @@ export const allProjects = [
   {
     proTitle: "My-accounts",
     category: "htss",
-    image: "/public/imgs/c1.jpg",
+    image: "/imgs/c1.jpg",
     mText: "This Page Includes All MY Social Media Accounts.",
     mLink: "https://mohammed-23-ham.github.io/My-Accounts/",
     // guessed repo url — update if your repo name differs
@@ -11,7 +11,7 @@ export const allProjects = [
   {
     proTitle: "To-do-list",
     category: "react",
-    image: "/public/imgs/c2.jpg",
+    image: "/imgs/c2.jpg",
     mText: "This Is A React Project To Organize Your To-Do-List.",
     mLink: "https://2o-dolist.netlify.app/",
     gitLink: "https://github.com/Mohammed-23-ham/to-do-list",
@@ -19,7 +19,7 @@ export const allProjects = [
   {
     proTitle: "Calculator",
     category: "js",
-    image: "/public/imgs/calculator.jpg",
+    image: "/imgs/calculator.jpg",
     mText: "This Is A Calculator Built With HTML + CSS + JS.",
     mLink: "https://mohammed-23-ham.github.io/calculator/",
     gitLink: "https://github.com/Mohammed-23-ham/calculator",
@@ -27,7 +27,7 @@ export const allProjects = [
   {
     proTitle: "XO-Game",
     category: "react",
-    image: "/public/imgs/c3.jpg",
+    image: "/imgs/c3.jpg",
     mText: "A Fun XO-Game Built with React.",
     mLink: "https://luxury-mochi-31dc95.netlify.app/",
     gitLink: "https://github.com/Mohammed-23-ham/xo-game",
@@ -35,7 +35,7 @@ export const allProjects = [
   {
     proTitle: "Template-1",
     category: "htss",
-    image: "/public/imgs/c4.jpg",
+    image: "/imgs/c4.jpg",
     mText: "Single-Page Design Built with HTML + CSS.",
     mLink: "https://mohammed-23-ham.github.io/template_one/",
     gitLink: "https://github.com/Mohammed-23-ham/template-1",
@@ -43,7 +43,7 @@ export const allProjects = [
   {
     proTitle: "Template-2",
     category: "htss",
-    image: "/public/imgs/c5.jpg",
+    image: "/imgs/c5.jpg",
     mText: "Single-Page Design Built with HTML + CSS.",
     mLink: "https://mohammed-23-ham.github.io/HTML-CSS-Template2/",
     gitLink: "https://github.com/Mohammed-23-ham/template-2",
@@ -51,7 +51,7 @@ export const allProjects = [
   {
     proTitle: "Template-3",
     category: "htss",
-    image: "/public/imgs/c6.jpg",
+    image: "/imgs/c6.jpg",
     mText: "Single-Page Design Built with HTML + CSS.",
     mLink: "https://mohammed-23-ham.github.io/HTML-CSS-Template3/",
     gitLink: "https://github.com/Mohammed-23-ham/template-3",
@@ -59,7 +59,7 @@ export const allProjects = [
   {
     proTitle: "Template-4",
     category: "htss",
-    image: "/public/imgs/c7.jpg",
+    image: "/imgs/c7.jpg",
     mText: "Multi-Page Design Built with HTML + CSS.",
     mLink: "https://mohammed-23-ham.github.io/template-four/",
     gitLink: "https://github.com/Mohammed-23-ham/template-4",
@@ -67,7 +67,7 @@ export const allProjects = [
   {
     proTitle: "Template-5",
     category: "js",
-    image: "/public/imgs/c8.jpg",
+    image: "/imgs/c8.jpg",
     mText: "Single-Page Design Built with HTML + CSS + JS.",
     mLink: "https://mohammed-23-ham.github.io/Template-five/",
     gitLink: "https://github.com/Mohammed-23-ham/template-5",
@@ -75,7 +75,7 @@ export const allProjects = [
   {
     proTitle: "Template-6",
     category: "js",
-    image: "/public/imgs/c9.jpg",
+    image: "/imgs/c9.jpg",
     mText: "Single-Page Design Built with HTML + CSS + JS.",
     mLink: "https://mohammed-23-ham.github.io/Template-6/",
     gitLink: "https://github.com/Mohammed-23-ham/template-6",

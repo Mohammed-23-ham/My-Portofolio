@@ -1,13 +1,23 @@
 import './Hero.css'
 import Lottie from 'lottie-react';
-import aniLap from '../../../public/animation/lap.json'
+import { useEffect, useState } from 'react'
 
 export default function Hero({ id }) {
+  const [aniLap, setAniLap] = useState(null)
+
+  useEffect(() => {
+    // load animation JSON from public folder at runtime
+    fetch('/animation/lap.json')
+      .then((r) => r.json())
+      .then((json) => setAniLap(json))
+      .catch(() => setAniLap(null))
+  }, [])
+
   return (
     <div id={id} className='hero flex'>
       <div className="lsection">
         <div className="parent-avatar flex">
-          <img src="/public/imgs/me.png" alt="" />
+          <img src="/imgs/me.png" alt="" />
           <span className="icon-verified" />
         </div>
         <h1 className="title">Software Designer, Aspiring Student, Specializing in React Fremwork.</h1>
@@ -20,7 +30,7 @@ export default function Hero({ id }) {
           <a href='https://linkedin.com/in/mohammed-alhamawy-602926342' className="icon icon-linkedin-square"></a>
         </div>
       </div>
-      <div className="rsection animation"><Lottie animationData={aniLap} /></div>
+      <div className="rsection animation">{aniLap ? <Lottie animationData={aniLap} /> : null}</div>
     </div>
   )
 }
